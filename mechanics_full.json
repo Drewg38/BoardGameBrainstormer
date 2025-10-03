@@ -1,0 +1,1253 @@
+{
+  "mechanics": [
+    {
+      "name": "Acting",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Players must perform, speak in character, or pantomime to communicate or trigger effects; performance constraints add tension and laughter while limiting precision."
+      ]
+    },
+    {
+      "name": "Action Drafting",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Players pick actions from a shared pool such that taken actions are unavailable or pricier for others that round; denial and tempo management are core."
+      ]
+    },
+    {
+      "name": "Action Points",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Each turn a budget of points can be spent on actions in any order; flexibility and sequencing create combo turns and tempo trade‑offs."
+      ]
+    },
+    {
+      "name": "Action Queue",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Players queue actions for later resolution (FIFO or phase‑based), enabling delayed combos and bluffing around timing windows."
+      ]
+    },
+    {
+      "name": "Advantage Token",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "A token grants priority, tie‑breaks, or small bonuses and may pass based on triggers; it’s a subtle but impactful tempo lever."
+      ]
+    },
+    {
+      "name": "Alliances",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Players form agreements (binding or not) to pursue shared goals; diplomacy, promises, and timing of betrayal shape outcomes."
+      ]
+    },
+    {
+      "name": "Area Control",
+      "aliases": [
+        "Area Majority / Influence"
+      ],
+      "url": "",
+      "desc": [
+        "Players compete to have the most presence in regions when scoring triggers; brinkmanship and timing are central."
+      ]
+    },
+    {
+      "name": "Auction/Bidding",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Players bid resources via English, Dutch, turn‑order, sealed, etc., to win items or privileges; valuation and psychology dominate."
+      ]
+    },
+    {
+      "name": "Automatic Resource Growth",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Income increases automatically by step or threshold without actions; supports engine arcs but must be bounded to prevent runaway leads."
+      ]
+    },
+    {
+      "name": "Betting and Bluffing",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Players stake resources on uncertain outcomes and may mislead opponents; works best with clear odds and counterplay."
+      ]
+    },
+    {
+      "name": "Bribery",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Pay others or the system to alter outcomes (votes, turn order, permissions); adds negotiation density with explicit costs."
+      ]
+    },
+    {
+      "name": "Campaign / Battle Card Driven",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Multi‑use cards drive events and operations in historical or campaign frameworks; sequencing and hand timing dominate."
+      ]
+    },
+    {
+      "name": "Card Drafting",
+      "aliases": [
+        "Drafting"
+      ],
+      "url": "",
+      "desc": [
+        "Pick one from a pool and pass the rest; visibility and table reads drive signaling and hate‑drafting."
+      ]
+    },
+    {
+      "name": "Catch the Leader",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Rubber‑band mechanisms pull trailers toward leaders via bonuses or discounts; tuning must avoid erasing skill."
+      ]
+    },
+    {
+      "name": "Chaining",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Effects trigger other effects producing cascades; development must bound ceilings to avoid runaway turns."
+      ]
+    },
+    {
+      "name": "Chit-Pull System",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Activation order comes from drawing labeled chits; models fog of war and variable tempo via bag composition."
+      ]
+    },
+    {
+      "name": "Communication Limits",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Rules restrict table talk or info sharing; promotes coordination without quarterbacking in co‑ops."
+      ]
+    },
+    {
+      "name": "Connections",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Players create or deduce relationships between items or nodes; common in party deduction and word association games."
+      ]
+    },
+    {
+      "name": "Cooperative Game",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "All players vs system with shared win/loss; coordination, risk management, and hidden info mitigate quarterbacking."
+      ]
+    },
+    {
+      "name": "Cube Tower",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "A tower randomizes outcomes with short‑term memory—dropped cubes can reappear later; suspenseful and tactile."
+      ]
+    },
+    {
+      "name": "Deck, Bag, or Pool Building",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Start weak and improve future draws by acquiring and culling; probability management is central."
+      ]
+    },
+    {
+      "name": "Deduction",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Use clues and inference to identify hidden information; progress requires clean clue structures and cadence."
+      ]
+    },
+    {
+      "name": "Delayed Purchase",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Reserve items now and pay later, separating commitment from payment and enabling tempo plays."
+      ]
+    },
+    {
+      "name": "Dexterity",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Physical skill (flicking, stacking, balancing) matters; accessible, chaotic, and tactile."
+      ]
+    },
+    {
+      "name": "Dice Rolling",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Random inputs resolved by dice; mitigation (rerolls, modifiers) keeps decisions meaningful."
+      ]
+    },
+    {
+      "name": "Die Icon Resolution",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Dice show icons that convert into actions/resources; mapping symbols to effects is the puzzle."
+      ]
+    },
+    {
+      "name": "End Game Bonuses",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Scoring conditions pay out at the end, shaping long‑term incentives and bluffing."
+      ]
+    },
+    {
+      "name": "Events",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Random or scripted events change state, pacing the game with opportunities and threats."
+      ]
+    },
+    {
+      "name": "Grid Movement",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Units move cell‑to‑cell on square/hex grids with costs and terrain; tactical clarity results."
+      ]
+    },
+    {
+      "name": "Hand Management",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Sequence limited cards for maximum multi‑turn impact; opportunity cost is the core tension."
+      ]
+    },
+    {
+      "name": "Hidden Movement",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "One side moves secretly while others deduce location; asymmetric cat‑and‑mouse."
+      ]
+    },
+    {
+      "name": "Hidden Roles",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Secret identities or objectives drive table talk and inference; requires clean accusation rules."
+      ]
+    },
+    {
+      "name": "Hidden Victory Points",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Some points are concealed until end; reduces kingmaking and preserves suspense."
+      ]
+    },
+    {
+      "name": "Hot Potato",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "A liability passes around; being stuck at key times yields penalties; tempo spikes and pass windows matter."
+      ]
+    },
+    {
+      "name": "I Cut, You Choose",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "One splits, another picks; self‑balancing division punishes unfair splits."
+      ]
+    },
+    {
+      "name": "Impulse Movement",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Activation alternates by impulses/areas with limited actions; granular tempo common in wargames."
+      ]
+    },
+    {
+      "name": "Income",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Periodic inflows from holdings; predictable cash‑flow anchors planning."
+      ]
+    },
+    {
+      "name": "Investment",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Commit resources now for uncertain/delayed returns; valuation and liquidity constraints matter."
+      ]
+    },
+    {
+      "name": "King of the Hill",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Compete to occupy a valuable location for ongoing points; dynamic clashes over a focal point."
+      ]
+    },
+    {
+      "name": "Ladder Climbing",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Play higher‑ranked sets/sequences than prior plays; tempo and partnerships shape control."
+      ]
+    },
+    {
+      "name": "Layering",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Stack components to cover/reveal icons or effects; visual clarity is paramount."
+      ]
+    },
+    {
+      "name": "Legacy Game",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Game state persists and evolves across sessions with permanent changes; strong narrative arc."
+      ]
+    },
+    {
+      "name": "Line Drawing",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Draw lines to claim routes, enclose areas, or meet spatial goals; common in roll‑and‑writes."
+      ]
+    },
+    {
+      "name": "Line of Sight",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Effects depend on unobstructed visibility paths; terrain/elevation rules are key."
+      ]
+    },
+    {
+      "name": "Loans",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Borrow now with interest/penalties later; tempo vs burden trade‑off."
+      ]
+    },
+    {
+      "name": "Lose a Turn",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Miss an entire turn due to penalties/randomness; should be used sparingly or compensated."
+      ]
+    },
+    {
+      "name": "Mancala",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Sow pieces around pits; deterministic tempo puzzles with capture/extra‑move rules."
+      ]
+    },
+    {
+      "name": "Market",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Prices and availability respond to supply/demand; timing buys/sells is core."
+      ]
+    },
+    {
+      "name": "Matching",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Match symbols/colors/features to trigger effects; used in set collection/tile placement."
+      ]
+    },
+    {
+      "name": "Memory",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Track hidden information locations for advantage; often softened with partial visibility."
+      ]
+    },
+    {
+      "name": "Modular Board",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Map changes each play via tiles/modules; layout drives access and balance."
+      ]
+    },
+    {
+      "name": "Move Through Deck",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Cycle through decks repeatedly to control cadence of encounters; throughput is a resource."
+      ]
+    },
+    {
+      "name": "Movement Points",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Spend an allowance to move across edges/terrain; costs create trade‑offs."
+      ]
+    },
+    {
+      "name": "Movement Template",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Templates/rulers define turns/drifts; common in miniatures for precise maneuver."
+      ]
+    },
+    {
+      "name": "Negotiation",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Bargain to align interests via trades/promises; time limits avoid stalemates."
+      ]
+    },
+    {
+      "name": "Network and Route Building",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Connect locations to unlock access/deliveries; topology and chokepoints shape races."
+      ]
+    },
+    {
+      "name": "Paper-and-Pencil",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Write/draw to record progress; pairs with dice/cards for input randomness."
+      ]
+    },
+    {
+      "name": "Passed Action Token",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "A token passes to change turn order or grant bonuses; enables tempo manipulation."
+      ]
+    },
+    {
+      "name": "Pattern Recognition",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Identify/create symbol/shape patterns to score or trigger effects; puzzle‑y scanning."
+      ]
+    },
+    {
+      "name": "Pick-up and Deliver",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Transport goods from sources to destinations efficiently; logistics and blocking."
+      ]
+    },
+    {
+      "name": "Pieces as Map",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Component arrangement forms the navigable map; emergent board from play."
+      ]
+    },
+    {
+      "name": "Player Anticipation",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Forecast opponents’ likely choices and plan counters; often via simultaneous selection."
+      ]
+    },
+    {
+      "name": "Player Elimination",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Players can be knocked out before game end; increases stakes but risks downtime."
+      ]
+    },
+    {
+      "name": "Player Judge",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "A rotating judge picks winning submissions; humor/meta drive outcomes."
+      ]
+    },
+    {
+      "name": "Point to Point Movement",
+      "aliases": [
+        "Point-to-Point (Graph)"
+      ],
+      "url": "",
+      "desc": [
+        "Movement along predefined node connections; chokepoints create strategy."
+      ]
+    },
+    {
+      "name": "Predictive Bid",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Secretly predict outcomes/quotas and score based on accuracy; risk management layer."
+      ]
+    },
+    {
+      "name": "Prisoner's Dilemma",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Cooperate or defect with payoff matrices; iterated interaction shapes meta."
+      ]
+    },
+    {
+      "name": "Programmed Movement",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Pre‑select sequences and resolve together; plans collide in surprising ways."
+      ]
+    },
+    {
+      "name": "Push Your Luck",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Continue for bigger reward at risk of busting; psychology and odds shape choices."
+      ]
+    },
+    {
+      "name": "Race",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Be first to a goal/threshold; tempo and route optimization dominate."
+      ]
+    },
+    {
+      "name": "Random Production",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Resource outputs depend on randomizers; players manage exposure/mitigation."
+      ]
+    },
+    {
+      "name": "Real-Time",
+      "aliases": [
+        "Real Time"
+      ],
+      "url": "",
+      "desc": [
+        "Timed simultaneous action; simple interfaces reduce rules overhead under pressure."
+      ]
+    },
+    {
+      "name": "Rock-Paper-Scissors",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Cyclic dominance resolution; best as a sub‑system with meaningful stakes."
+      ]
+    },
+    {
+      "name": "Role Playing",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Evolving characters with stats/gear choices; story arcs over sessions."
+      ]
+    },
+    {
+      "name": "Roles with Asymmetric Information",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Different players possess unique private knowledge; timing reveals is strategic."
+      ]
+    },
+    {
+      "name": "Roll / Spin and Move",
+      "aliases": [
+        "Roll-and-Move"
+      ],
+      "url": "",
+      "desc": [
+        "Random movement advances pieces; depth comes from layers around the movement."
+      ]
+    },
+    {
+      "name": "Rondel",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Action wheel where moving farther costs more; position planning is central."
+      ]
+    },
+    {
+      "name": "Scenario / Mission / Campaign Game",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Structured scenarios and linked campaigns with persistence; narrative pacing matters."
+      ]
+    },
+    {
+      "name": "Score-and-Reset Game",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Score within rounds then reset; repeated mini‑games emphasize consistency."
+      ]
+    },
+    {
+      "name": "Secret Unit Deployment",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Place units/resources secretly then reveal; bluffing around placement."
+      ]
+    },
+    {
+      "name": "Semi-Cooperative Game",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Players must avoid group loss but pursue personal victory; tension between help and self‑interest."
+      ]
+    },
+    {
+      "name": "Set Collection",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Collect related items with non‑linear scoring; commitment and denial race."
+      ]
+    },
+    {
+      "name": "Simultaneous Action Selection",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Choose actions in secret and reveal; reduces downtime and adds mind‑games."
+      ]
+    },
+    {
+      "name": "Singing",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Sing/rhythm prompts as part of play; party‑energy constraint."
+      ]
+    },
+    {
+      "name": "Single Loser Game",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Only one player loses; everyone else wins; focus on avoiding the losing condition."
+      ]
+    },
+    {
+      "name": "Slide/Push",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Slide rows/columns or stacks to change the state; tactile spatial tempo."
+      ]
+    },
+    {
+      "name": "Solo / Solitaire Game",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Single player vs system puzzle or automa; clarity and speed matter."
+      ]
+    },
+    {
+      "name": "Speed Matching",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Race to match patterns/symbols; reflex and scanning heavy."
+      ]
+    },
+    {
+      "name": "Stacking and Balancing",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Physically balance stacks; clear end states and component tolerances matter."
+      ]
+    },
+    {
+      "name": "Stock Holding",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Buy/sell shares that pay dividends or grant control; valuation and timing."
+      ]
+    },
+    {
+      "name": "Storytelling",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Narrate outcomes based on prompts/icons; bounded prompts keep pace."
+      ]
+    },
+    {
+      "name": "Sudden Death Ending",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Trigger ends the game immediately; thresholds must be visible for planning."
+      ]
+    },
+    {
+      "name": "Take That",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Directly hinder opponents via curses/removal; include defenses to avoid lockouts."
+      ]
+    },
+    {
+      "name": "Team-Based Game",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Fixed teams with shared goals; communication/information rules define tone."
+      ]
+    },
+    {
+      "name": "Tech Trees / Tech Tracks",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Unlock abilities along tracks/branches; snowballing checked via costs/caps."
+      ]
+    },
+    {
+      "name": "Three Dimensional Movement",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Movement in x/y/z axes; visualization tools keep state clear."
+      ]
+    },
+    {
+      "name": "Tile Placement",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Place tiles under adjacency rules to build maps/patterns/engines; spatial tactics."
+      ]
+    },
+    {
+      "name": "Time Track",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Turn order by time cost; the furthest back acts next; time is the resource."
+      ]
+    },
+    {
+      "name": "Track Movement",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Advance markers on tracks to mark progress/income/thresholds; branch points add interest."
+      ]
+    },
+    {
+      "name": "Trading",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Exchange goods/money/promises; enforceability and info symmetry set tone."
+      ]
+    },
+    {
+      "name": "Traitor Game",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Hidden saboteur works against group; suspicion and defense shape play."
+      ]
+    },
+    {
+      "name": "Trick-taking",
+      "aliases": [
+        "Trick‑Taking"
+      ],
+      "url": "",
+      "desc": [
+        "Follow suit/trump to win tricks; inference and distribution create depth."
+      ]
+    },
+    {
+      "name": "Tug of War",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Opposed marker shifts along a track; swing tuning prevents inevitability."
+      ]
+    },
+    {
+      "name": "Variable Phase Order",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Phase order changes between rounds by rule or influence; timing recalculation."
+      ]
+    },
+    {
+      "name": "Variable Player Powers",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Each player has unique powers; asymmetry multiplies strategy space."
+      ]
+    },
+    {
+      "name": "Variable Set-up",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Initial conditions vary per play; prevents solved openings."
+      ]
+    },
+    {
+      "name": "Victory Points as a Resource",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "VP can be spent for actions; tension between immediacy and final score."
+      ]
+    },
+    {
+      "name": "Voting",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Ballots resolve group choices; thresholds and tie‑breakers essential."
+      ]
+    },
+    {
+      "name": "Worker Placement",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Assign workers to exclusive spaces; scarcity, turn order, and denial create tension."
+      ]
+    },
+    {
+      "name": "Action/Event",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Turns alternate between choosing actions and resolving event effects that reshape priorities; tactical flexibility meets emerging threats."
+      ]
+    },
+    {
+      "name": "Act-Then-Resolve",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Players commit actions and later resolve them in a shared order; sequencing and initiative matter."
+      ]
+    },
+    {
+      "name": "Action Retrieval",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Spent actions/workers return on timing rules, creating rhythms of weak/strong turns and retrieval puzzles."
+      ]
+    },
+    {
+      "name": "Action Timer",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "A timer limits how long players can act in a phase; urgency elevates simple interfaces and snap decisions."
+      ]
+    },
+    {
+      "name": "Auction: English",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Ascending bids until only one remains; classic valuation and nerve‑holding contest."
+      ]
+    },
+    {
+      "name": "Auction: Dutch",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Price descends until someone accepts; rewards decisive valuation and timing."
+      ]
+    },
+    {
+      "name": "Auction: Turn Order",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Bid for earlier turn position; tempo is monetized and denial is explicit."
+      ]
+    },
+    {
+      "name": "Auction Compensation",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Non‑winners receive compensation (money/cards) to reduce snowballing and encourage aggressive bidding."
+      ]
+    },
+    {
+      "name": "Bingo",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Shared random inputs generate marks everyone uses simultaneously; race to patterns/hits."
+      ]
+    },
+    {
+      "name": "Boss Battle",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "A climactic multi‑stage adversary requires coordinated tactics or specific counters; often scenario driven."
+      ]
+    },
+    {
+      "name": "Commodity Speculation",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Prices fluctuate based on supply/demand or events; profit by buying low and selling high."
+      ]
+    },
+    {
+      "name": "Contracts",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Fulfilling public or private orders yields points/bonuses; requires resource planning and timing."
+      ]
+    },
+    {
+      "name": "Deck Construction",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Build decks from a card pool before play under rules; metagame and preparation are emphasized."
+      ]
+    },
+    {
+      "name": "Dice as Workers",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Dice are assigned to action spaces; face values gate access, creating probability‑driven worker placement."
+      ]
+    },
+    {
+      "name": "Drafting: Open",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Visible shared pool; signaling and denial are explicit."
+      ]
+    },
+    {
+      "name": "Drafting: Closed",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Hidden hands pass around; inference and memory matter."
+      ]
+    },
+    {
+      "name": "Engine Building",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Systems convert inputs to better outputs over time; compounding value and synergy discovery drive arc."
+      ]
+    },
+    {
+      "name": "Hex and Counter",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Wargame system with hex grid and unit counters; emphasizes positioning, zones of control, and logistics."
+      ]
+    },
+    {
+      "name": "Hex Grid",
+      "aliases": [
+        "Hexagon Grid"
+      ],
+      "url": "",
+      "desc": [
+        "Map uses hexes allowing even distance in six directions; simplifies range/flanking math."
+      ]
+    },
+    {
+      "name": "Simultaneous Reveal",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Players choose secretly and reveal together; mind‑games with deterministic resolution ordering."
+      ]
+    },
+    {
+      "name": "Melding and Splaying",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Layer cards to expose icons/bonuses; tableau geometry changes outputs."
+      ]
+    },
+    {
+      "name": "Modular Board Setup",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Procedural or drafted map setup ensures variety and prevents solved openings."
+      ]
+    },
+    {
+      "name": "Movement Programming (Light)",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Short programmed sequences resolve quickly; reduces chaos while keeping anticipation."
+      ]
+    },
+    {
+      "name": "Ownership",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Areas/resources under player control confer rights/income; enables taxation and leverage."
+      ]
+    },
+    {
+      "name": "Paper-and-Pencil (Roll-and-Write)",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Dice/cards provide inputs; players write results to build engines/routes on sheets."
+      ]
+    },
+    {
+      "name": "Pattern Building",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Arrange pieces into shapes/recipes to trigger scoring or abilities."
+      ]
+    },
+    {
+      "name": "Point Salad Scoring",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Many small scoring systems overlap; players tailor mixes rather than chase a single objective."
+      ]
+    },
+    {
+      "name": "Point-to-Point (Graph)",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Movement on network nodes/edges; emphasizes route choice and blocking."
+      ]
+    },
+    {
+      "name": "Real-Time Programming",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Queue actions under a timer then execute; pressure plus planning."
+      ]
+    },
+    {
+      "name": "Re-rolling and Locking",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Reroll with locking rules (e.g., Yahtzee style) to fish for patterns with known odds."
+      ]
+    },
+    {
+      "name": "Resource Conversion",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Transform resources along recipes (A→B→VP); efficiency chains define strategy."
+      ]
+    },
+    {
+      "name": "Resource to Move",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Spending resources enables movement or actions; economy is tightly tied to tempo."
+      ]
+    },
+    {
+      "name": "Route/Network Optimization",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Optimize pathing for deliveries or coverage under constraints; traveling‑salesperson‑style decisions."
+      ]
+    },
+    {
+      "name": "Scenario Objectives",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Each scenario prescribes unique goals and rules twists; variety through structure."
+      ]
+    },
+    {
+      "name": "Simulation",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Model real‑world processes with fidelity; mechanisms serve the model’s causality."
+      ]
+    },
+    {
+      "name": "Story Campaign",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Linked narrative missions with persistence and branching; character/world progression."
+      ]
+    },
+    {
+      "name": "Team vs Team",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Multiple fixed teams compete simultaneously; intra‑team coordination plus inter‑team rivalry."
+      ]
+    },
+    {
+      "name": "Time Pressure",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Explicit time scarcity constrains planning or action windows; increases tension and mistakes."
+      ]
+    },
+    {
+      "name": "Traitor with Hidden Agenda",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Traitor has personal objectives beyond simple sabotage; nuanced incentives and reveals."
+      ]
+    },
+    {
+      "name": "Trading with Negotiation",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Open bartering with table talk and deal‑making; social leverage meets valuation."
+      ]
+    },
+    {
+      "name": "Variable Market",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Prices/availability change due to events/refills; dynamic supply/demand curves."
+      ]
+    },
+    {
+      "name": "Variable Setup Objectives",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Random or drafted objectives alter openings; replayability and divergent lines."
+      ]
+    },
+    {
+      "name": "Worker Placement (Different Worker Types)",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Workers have distinct capabilities/costs; spot access and bonuses differ by worker type."
+      ]
+    },
+    {
+      "name": "Worker Placement (Different Worker Abilities)",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Workers level up or possess powers; placement produces asymmetric effects."
+      ]
+    },
+    {
+      "name": "Zone of Control",
+      "aliases": [],
+      "url": "",
+      "desc": [
+        "Adjacent enemy units restrict movement or actions; tactical positioning and pinning."
+      ]
+    }
+  ],
+  "count": 154,
+  "lastUpdated": "2025-10-02",
+  "source": "BGG mechanics taxonomy + user-specified list; descriptions authored for clarity."
+}
