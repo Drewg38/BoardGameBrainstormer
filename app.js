@@ -1,11 +1,10 @@
 
-// Cool Board Game Brainstormer — External Logic (app.js)
+// Cool Board Game Brainstormer — External Logic (app.js) v2
 (function(){
   const RAW_BASE = 'https://raw.githubusercontent.com/Drewg38/BoardGameBrainstormer/3e3f84dc187ee19bf63a71a000bc3a82c7b6420e';
   const MECH_URL  = RAW_BASE + '/mechanics_full.json';
   const THEME_URL = RAW_BASE + '/themes_full.json';
 
-  // ---------- tiny utils ----------
   const $ = (sel, root=document) => root.querySelector(sel);
   const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
   const by = (k) => (a,b)=> (a[k]||'').localeCompare(b[k]||'');
@@ -24,14 +23,12 @@
     return String(x);
   }
   function normalizeList(raw, keyGuess){
-    // accepts: {items:[...]}, {mechanics:[...]}, {themes:[...]}, [...]
     let list = [];
     if (Array.isArray(raw)) list = raw;
     else if (raw && Array.isArray(raw.items)) list = raw.items;
     else if (keyGuess && raw && Array.isArray(raw[keyGuess])) list = raw[keyGuess];
     else if (raw && raw.data && Array.isArray(raw.data[keyGuess])) list = raw.data[keyGuess];
     else list = [];
-    // map to {name, desc, url?}
     return list.map(x => ({
       name: toName(x),
       desc: toArrayDesc(x),
@@ -56,7 +53,6 @@
     return buckets;
   }
 
-  // ---------- reels model ----------
   function windowed(list, center, size=3){
     const out = [];
     const half = Math.floor(size/2);
@@ -73,7 +69,6 @@
     let idx = Math.floor(Math.random()*items.length);
     let spinning = false;
     let raf = 0;
-    let vel = 0;
     let locked = false;
 
     function render(){
@@ -100,7 +95,7 @@
       spinning = true;
       let acc = 0;
       let last = performance.now();
-      const cadence = (100 / speed); // smaller = faster
+      const cadence = (100 / speed);
       const tick = (t)=>{
         if (!spinning) return;
         const dt = t - last;
@@ -122,23 +117,25 @@
       locked = v;
       el.classList.toggle('locked', locked);
     }
-    function isLocked(){ return locked; }
 
-    // manual scroll :: consume wheel within reel
+    // Slower manual wheel
+    let wheelAccum = 0;
+    const STEP_THRESHOLD = 120;
     function onWheel(e){
       if (!el.matches(':hover')) return;
       e.preventDefault();
       e.stopPropagation();
       if (spinning) return;
-      const dir = e.deltaY > 0 ? 1 : -1;
-      step(dir);
+      wheelAccum += e.deltaY;
+      while (wheelAccum >= STEP_THRESHOLD){ step(1); wheelAccum -= STEP_THRESHOLD; }
+      while (wheelAccum <= -STEP_THRESHOLD){ step(-1); wheelAccum += STEP_THRESHOLD; }
     }
     viewport.addEventListener('wheel', onWheel, { passive:false });
 
     return {
       get index(){ return idx; },
       set index(v){ idx = ((v % items.length) + items.length) % items.length; render(); },
-      render, spin, stop, lock, isLocked,
+      render, spin, stop, lock,
       get value(){ return items[idx]; },
       setItems(newItems){
         items = newItems && newItems.length ? newItems : items;
@@ -148,7 +145,6 @@
     };
   }
 
-  // ---------- concept card ----------
   const WEIGHTS = [1,2,3,4,5];
   function randInt(min,max){ return Math.floor(Math.random()*(max-min+1))+min; }
   function randomMode(){ return Math.random()<0.5 ? 'Competitive' : 'Cooperative'; }
@@ -167,7 +163,7 @@
         <div class="badges">
           <span class="badge">${mode}</span>
           <span class="badge">Players ${players}</span>
-          <span class="badge">Weight ${weight} &nbsp;<span style="letter-spacing:2px">${weightDots(weight)}</span></span>
+          <span class="badge">Weight ${weight} <span style="letter-spacing:2px;margin-left:6px">${weightDots(weight)}</span></span>
         </div>
         <div class="sep"></div>
         <div style="margin-bottom:8px">
@@ -191,7 +187,6 @@
     `;
   }
 
-  // ---------- directories ----------
   function renderDir(el, entries, page, size){
     if (!el) return;
     const start = page*size;
@@ -206,7 +201,6 @@
     });
   }
 
-  // ---------- main init ----------
   async function loadJSON(url){
     const res = await fetch(url, { mode:'cors', redirect:'follow' });
     if (!res.ok) throw new Error(`HTTP ${res.status} ${url}`);
@@ -239,16 +233,13 @@
     const MECHS  = normalizeList(mechsRaw, 'mechanics');
     setStatus(`Loaded ${THEMES.length} themes and ${MECHS.length} mechanics.`);
 
-    // build reels
     const themeReel = makeReel($(opts.els.reels.theme), THEMES);
     const m1Reel    = makeReel($(opts.els.reels.mech1), MECHS);
     const m2Reel    = makeReel($(opts.els.reels.mech2), MECHS);
 
-    // spin speeds
     const speeds = { slow: 0.9, spin: 1.4, fast: 2.2 };
-    let active = null;
 
-    function stopAll(){ themeReel.stop(); m1Reel.stop(); m2Reel.stop(); active = null; }
+    function stopAll(){ themeReel.stop(); m1Reel.stop(); m2Reel.stop(); }
     function unlockAll(){ themeReel.lock(false); m1Reel.lock(false); m2Reel.lock(false); }
     function lockAll(){ themeReel.lock(true); m1Reel.lock(true); m2Reel.lock(true); }
 
@@ -260,17 +251,16 @@
     const btnManual = $(opts.els.buttons.manual);
     const btnLock = $(opts.els.buttons.lock);
 
-    if (btnSlow) btnSlow.onclick = ()=>{ unlockAll(); stopAll(); themeReel.spin(speeds.slow); m1Reel.spin(speeds.slow); m2Reel.spin(speeds.slow); active='slow'; };
-    if (btnSpin) btnSpin.onclick = ()=>{ unlockAll(); stopAll(); themeReel.spin(speeds.spin); m1Reel.spin(speeds.spin); m2Reel.spin(speeds.spin); active='spin'; };
-    if (btnFast) btnFast.onclick = ()=>{ unlockAll(); stopAll(); themeReel.spin(speeds.fast); m1Reel.spin(speeds.fast); m2Reel.spin(speeds.fast); active='fast'; };
-    if (btnManual) btnManual.onclick = ()=>{ stopAll(); unlockAll(); setStatus('Manual: hover a reel and scroll to change'); };
+    if (btnSlow) btnSlow.onclick = ()=>{ unlockAll(); stopAll(); themeReel.spin(speeds.slow); m1Reel.spin(speeds.slow); m2Reel.spin(speeds.slow); };
+    if (btnSpin) btnSpin.onclick = ()=>{ unlockAll(); stopAll(); themeReel.spin(speeds.spin); m1Reel.spin(speeds.spin); m2Reel.spin(speeds.spin); };
+    if (btnFast) btnFast.onclick = ()=>{ unlockAll(); stopAll(); themeReel.spin(speeds.fast); m1Reel.spin(speeds.fast); m2Reel.spin(speeds.fast); };
+    if (btnManual) btnManual.onclick = ()=>{ stopAll(); unlockAll(); /* removed status line */ };
     if (btnLock) btnLock.onclick = ()=>{
       stopAll(); lockAll();
-      setStatus('Locked.');
+      setStatus('');
       renderConcept(conceptEl, themeReel.value, m1Reel.value, m2Reel.value);
     };
 
-    // directories
     const themeBuckets = bucketByLetters(THEMES);
     const mechBuckets  = bucketByLetters(MECHS);
     const themePage = { bucket: 'A–E', page: 0, size: 6 };
@@ -295,7 +285,6 @@
       if (mechPageLabel) mechPageLabel.textContent = `${mechPage.bucket} — Page ${mechPage.page+1} / ${totalPages}`;
     }
 
-    // filter buttons (independent sets)
     $$('.theme-filter').forEach(btn=>{
       btn.onclick = ()=>{ themePage.bucket = btn.textContent.trim(); themePage.page = 0; updateThemeDir(); };
     });
@@ -303,7 +292,6 @@
       btn.onclick = ()=>{ mechPage.bucket = btn.textContent.trim(); mechPage.page = 0; updateMechDir(); };
     });
 
-    // pagers
     const tPrev = $(opts.els.themePagerPrev);
     const tNext = $(opts.els.themePagerNext);
     const mPrev = $(opts.els.mechPagerPrev);
@@ -318,7 +306,6 @@
     setStatus('');
   }
 
-  // expose init globally
   window.Brainstormer = window.Brainstormer || {};
   window.Brainstormer.init = function init(opts){
     try {
